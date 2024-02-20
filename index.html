@@ -21,7 +21,7 @@
 </body>
 </html>
 
--->
+
 
 <!DOCTYPE html>
 <html>
@@ -68,6 +68,104 @@
 
 
 
+
+
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Just for You</title>
+<style>
+/* Style this heavily (colors, fonts, animations) */
+body { 
+  background-color: #f0f0f0; /* Change this! */
+  overflow: hidden; /* Prevents scrollbars during animation */
+}
+
+.heart {
+  position: absolute;
+  font-size: 40px;
+  color: red; /* Change this if needed */
+  cursor: pointer;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% { transform: translateY(-20px); }
+}
+
+#message {
+  position: absolute; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+}
+
+/* Paste your existing CSS here... */
+
+body { 
+  background-image: url('C:\Users\asmod\Documents\GitHub\asmodsite\assets\img\portfolio\portfolio-1.jpg'); /* Your image file */
+  background-size: cover; /* Scale image to fit */
+  font-family: 'Dancing Script', cursive; /* Whimsical font */ 
+}
+
+.heart {
+  /* ...your existing heart style */
+  color: #f5a9d0;  /* Soft pink color */
+  animation: float 3s ease-in-out infinite, pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+} 
+
+</style>
+</head>
+<body>
+    <audio autoplay loop>  
+        <source src="C:\Users\asmod\Documents\GitHub\asmodsite\assets\music\x2mate.com - Consuelo Velazquez — Besame Mucho (256 kbps).mp3" type="audio/mpeg">
+        Your browser doesn't support background music. 
+      </audio> 
+      
+<div id="message">
+  <h2>Asmod here has something to say...</h2> 
+  <p>Click the hearts to reveal a message!</p>
+</div>
+
+<script>
+let count = 0;
+const clickLimit = 10; // How many clicks to reveal?
+
+window.addEventListener('click', function (e) {
+  const heart = document.createElement('div');
+  heart.innerText = '❤️';
+  heart.classList.add('heart');
+  heart.style.left = e.clientX + 'px';
+  heart.style.top = e.clientY + 'px';
+  document.body.appendChild(heart);
+
+  count++; 
+  if (count >= clickLimit) {
+    document.getElementById('message').style.display = 'block'; 
+    // Add a final, sweet message into the <h3> below!   
+    document.getElementById('message').innerHTML += '<h3>I love you!</h3>'; 
+  }
+
+  
+
+
+
+
+  setTimeout(() => heart.remove(), 3000); // Hearts fade out
+});
+</script>
 
 
 
