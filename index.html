@@ -1,172 +1,40 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asmod Portfolio</title>
+    <title>Your Name | Home</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
 </head>
 <body>
 
-<h1>Asmod Khakurel</h1>
+    <header>
+        <h1>Welcome to My Personal Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p>Click the link below to view/download my resume:</p>
-<a class="resume-link" href="C:\Users\asmod\Documents\GitHub\asmodsite\assets\img\Asmod_Resume.pdf" target="_blank">View My Resume</a>
-<a href="C:\Users\asmod\Documents\GitHub\asmodsite\assets\img\Asmod_Resume.pdf" download>Download Resume</a>
-<a class="Math Capstone" href="C:\Users\asmod\Documents\GitHub\asmodsite\assets\pdfs\Math capstone_ KhakurelAsmodFinalPaper.pdf" target="_blank">Math Capstone</a>
-<a class="Econometrics Honors Paper" href="C:\Users\asmod\Documents\GitHub\asmodsite\assets\pdfs\Econometrics_Project_Asmod Khakurel.pdf" target="_blank">Economics Honors Paper</a>
-<a class="Portfolion Memo" href="C:\Users\asmod\Documents\GitHub\asmodsite\assets\pdfs\Work and Writing Sample (Memo Econ 337).pdf" target="_blank">Memo Portfolio Allocation</a>
-<a class="Portfolio Model (Excel File)" href="C:\Users\asmod\Documents\GitHub\asmodsite\assets\pdfs\Work Sample (Dataset ECON 337).xlsx" target="_blank">Portfolio Model (Excel file)</a>
+    <main>
+        <section id="introduction">
+            <h2>Hello, I'm [Your Name]</h2>
+            <p>Welcome to my website! I'm a [Your Profession] with a passion for [Your Interests]. Explore my portfolio, read my blog, or get in touch to learn more.</p>
+        </section>
+        
+        <!-- You can add more sections here with different content as needed -->
+    </main>
 
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com">LinkedIn</a>, <a href="https://www.twitter.com">Twitter</a>, or <a href="https://www.github.com">GitHub</a>.</p>
+    </footer>
 
-</body>
-</html>
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>A Little Something for You</title>
-<style>
-#container {
-  width: 400px;
-  height: 300px;
-  position: relative;
-  margin: 50px auto; 
-  overflow: hidden;
-}
-
-#photo {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-#container:hover #photo {
-  opacity: 1;
-}
-
-#message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 24px;
-  color: white;
-}
-</style>
-</head>
-<body>
-
-<div id="container">
-  <img id="photo" src="C:\Users\asmod\Documents\GitHub\asmodsite\assets\img\portfolio\portfolio-1.jpg" alt="Picture of Us">
-  <div id="message">I love you!</div>
-</div>
-
-
-
-
-
-
-
-</body>
-</html>
--->
-<!DOCTYPE html>
-<html>
-<head>
-<title>Just for You</title>
-<style>
-/* Style this heavily (colors, fonts, animations) */
-body { 
-  background-color: #f0f0f0; /* Change this! */
-  overflow: hidden; /* Prevents scrollbars during animation */
-}
-
-.heart {
-  position: absolute;
-  font-size: 40px;
-  color: red; /* Change this if needed */
-  cursor: pointer;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  50% { transform: translateY(-20px); }
-}
-
-#message {
-  position: absolute; 
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  display: none;
-}
-
-/* Paste your existing CSS here... */
-
-body { 
-  background-image: url('C:\Users\asmod\Documents\GitHub\asmodsite\assets\img\portfolio\portfolio-1.jpg'); /* Your image file */
-  background-size: cover; /* Scale image to fit */
-  font-family: 'Dancing Script', cursive; /* Whimsical font */ 
-}
-
-.heart {
-  /* ...your existing heart style */
-  color: #f5a9d0;  /* Soft pink color */
-  animation: float 3s ease-in-out infinite, pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.5; }
-  100% { opacity: 1; }
-} 
-
-</style>
-</head>
-<body>
-    <audio autoplay loop>  
-        <source src="C:\Users\asmod\Documents\GitHub\asmodsite\assets\music\x2mate.com - Consuelo Velazquez — Besame Mucho (256 kbps).mp3" type="audio/mpeg">
-      </audio> 
-      
-<div id="message">
-  <h2>Asmod here has something to say...</h2> 
-  <p>Click the hearts to reveal a message!</p>
-</div>
-
-<script>
-let count = 0;
-const clickLimit = 10; // How many clicks to reveal?
-
-window.addEventListener('click', function (e) {
-  const heart = document.createElement('div');
-  heart.innerText = '❤️';
-  heart.classList.add('heart');
-  heart.style.left = e.clientX + 'px';
-  heart.style.top = e.clientY + 'px';
-  document.body.appendChild(heart);
-
-  count++; 
-  if (count >= clickLimit) {
-    document.getElementById('message').style.display = 'block'; 
-    // Add a final, sweet message into the <h3> below!   
-    document.getElementById('message').innerHTML += '<h3>I love you!</h3>'; 
-  }
-
-  
-
-
-
-
-  setTimeout(() => heart.remove(), 3000); // Hearts fade out
-});
-</script>
-
-
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 
 </body>
 </html>
