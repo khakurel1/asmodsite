@@ -1,0 +1,60 @@
+/* Basic color definitions */
+:root {
+    --primary-color: #555555; /* Medium Grey for primary text */
+    --secondary-color: #CCCCCC; /* Light Grey for secondary elements */
+    --background-color: #FFFFFF; /* White for background */
+}
+
+body {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif; /* You can choose your own font */
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styling for other elements */
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+button, .btn {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #666666; /* A slightly darker grey for hover */
+}
