@@ -3,12 +3,19 @@
     --primary-color: #555555; /* Medium Grey for primary text */
     --secondary-color: #CCCCCC; /* Light Grey for secondary elements */
     --background-color: #FFFFFF; /* White for background */
+    --hover-color: #666666; /* Darker Grey for hover effects */
+    --cta-button-color: #007BFF; /* Bright Blue for call-to-action buttons */
 }
 
 body {
+    font-family: 'Arial', sans-serif;
     color: var(--primary-color);
     background-color: var(--background-color);
-    font-family: 'Arial', sans-serif; /* You can choose your own font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header, footer {
@@ -18,8 +25,9 @@ header, footer {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -30,13 +38,14 @@ nav ul li {
 nav ul li a {
     color: var(--primary-color);
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
+    color: var(--hover-color);
 }
 
-/* Additional styling for other elements */
 h1, h2, h3 {
     color: var(--primary-color);
 }
@@ -47,7 +56,6 @@ button, .btn {
     border: none;
     padding: 8px 15px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
@@ -56,31 +64,32 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
-    background-color: #666666; /* A slightly darker grey for hover */
-}
-
-.about-container {
-    text-align: center; /* Centers the text and image */
+    background-color: var(--hover-color);
 }
 
 .profile-pic {
-    width: 40%; /* Adjust size as needed */
-    height: auto; /* Maintains the aspect ratio */
-    margin-top: 20px; /* Adds space between the text and the image */
-    display: block; /* Ensures the image is treated as a block-level element */
-    margin-left: auto; /* These two margin settings center the image horizontally */
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
     margin-right: auto;
 }
 
-p {
-    margin-bottom: 20px; /* Adds space below the paragraph */
+.about-container {
+    text-align: center;
 }
 
-
-body {
-    font-family: Arial, sans-serif; /* Ensures a clean, modern look */
+.cta-button {
+    background-color: var(--cta-button-color);
+    color: var(--background-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-nav ul {
-    list-style-type: none;
+footer {
+    font-size: 0.8em;
+    color: var(--primary-color);
 }
