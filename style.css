@@ -58,3 +58,17 @@ button, .btn {
 button:hover, .btn:hover {
     background-color: #666666; /* A slightly darker grey for hover */
 }
+
+.about-container {
+    display: flex;
+    align-items: center; /* Aligns the image and text vertically */
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Adds space between the image and text */
+    border-radius: 50%; /* Makes the image round */
+}
+
