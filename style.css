@@ -75,3 +75,12 @@ button:hover, .btn:hover {
 p {
     margin-bottom: 20px; /* Adds space below the paragraph */
 }
+
+
+body {
+    font-family: Arial, sans-serif; /* Ensures a clean, modern look */
+}
+
+nav ul {
+    list-style-type: none;
+}
