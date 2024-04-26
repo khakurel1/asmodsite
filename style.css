@@ -60,23 +60,18 @@ button:hover, .btn:hover {
 }
 
 .about-container {
-    text-align: center; /* Center-aligns the content */
+    text-align: center; /* Centers the text and image */
 }
 
 .profile-pic {
     width: 40%; /* Adjust size as needed */
     height: auto; /* Maintains the aspect ratio */
     margin-top: 20px; /* Adds space between the text and the image */
-    border-radius: 50%; /* Makes the image round */
+    display: block; /* Ensures the image is treated as a block-level element */
+    margin-left: auto; /* These two margin settings center the image horizontally */
+    margin-right: auto;
 }
 
 p {
-    margin: 0 0 20px 0; /* Adds margin to the bottom of the paragraph */
-}
-
-
-@media (max-width: 768px) {
-    .profile-pic {
-        width: 80%; /* Makes the image larger on smaller screens */
-    }
+    margin-bottom: 20px; /* Adds space below the paragraph */
 }
