@@ -60,20 +60,23 @@ button:hover, .btn:hover {
 }
 
 .about-container {
-    display: flex;
-    align-items: center; /* Keeps text aligned with the top of the image */
-    gap: 20px; /* Adds space between the image and the text */
+    text-align: center; /* Center-aligns the content */
 }
 
 .profile-pic {
-    width: 30%; /* Adjusts the width of the image to take up more space */
-    height: auto; /* Keeps the image aspect ratio intact */
-    border-radius: 50%; /* Keeps the image round */
-    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 40%; /* Adjust size as needed */
+    height: auto; /* Maintains the aspect ratio */
+    margin-top: 20px; /* Adds space between the text and the image */
+    border-radius: 50%; /* Makes the image round */
 }
 
 p {
-    flex: 1; /* Allows the text to fill the remaining space */
-    margin: 0; /* Removes default margin */
+    margin: 0 0 20px 0; /* Adds margin to the bottom of the paragraph */
 }
 
+
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 80%; /* Makes the image larger on smaller screens */
+    }
+}
