@@ -66,7 +66,7 @@ button:hover, .btn:hover {
 }
 
 .profile-pic {
-    width: 40%; /* Adjusts the width of the image to take up more space */
+    width: 30%; /* Adjusts the width of the image to take up more space */
     height: auto; /* Keeps the image aspect ratio intact */
     border-radius: 50%; /* Keeps the image round */
     flex-shrink: 0; /* Prevents the image from shrinking */
