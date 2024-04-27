@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Asmod Khakurel</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure to link your CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .accordion {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            background-color: #f1f1f1;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-
     <header>
         <nav>
             <ul>
@@ -15,7 +37,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="services.html">Services</a></li> 
+                <li><a href="services.html">Services</a></li>
             </ul>
         </nav>
     </header>
@@ -23,62 +45,62 @@
     <main>
         <section id="portfolio-intro">
             <h1>My Portfolio</h1>
-            <p>Welcome to my portfolio page! Here, you'll find a selection of projects that best represent my skills and accomplishments across professional, academic, and volunteer endeavors.</p>
+            <p>Welcome to my portfolio page! Here, you'll find a selection of projects and experiences that best represent my skills and accomplishments.</p>
         </section>
 
-        <section id="professional-projects">
-            <h2>Professional Projects</h2>
-            <!-- Project 1 -->
-            <div class="project">
-                <h3>Client Churn Analysis - Morningstar</h3>
-                <p>Developed and implemented advanced data analysis techniques to understand client churn rates, enhancing decision-making and customer retention strategies.</p>
-                <!-- Add more details or a link to the project if available -->
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
-
-        <section id="academic-projects">
-            <h2>Academic Projects</h2>
-            <!-- Project 1 -->
-            <div class="project">
-                <h3>Economics Honors Paper on Health Expenditures</h3>
-                <p>Conducted an in-depth econometric analysis to explore the relationship between healthcare spending and patient outcomes, contributing valuable insights to the field of health economics.</p>
-                <!-- Add more details or a link to the project if available -->
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
-
-        <section id="community-projects">
-            <h2>Leadership and Community Projects</h2>
-            <!-- Project 1 -->
-            <div class="project">
-                <h3>Educational Initiatives - Reinstalling Hope</h3>
-                <p>Led a series of educational projects aimed at providing computer science education to over 400 children, ensuring continuity of learning during challenging times.</p>
-                <!-- Add more details or a link to the project if available -->
-            </div>
-            <!-- Add more projects as needed -->
-        </section>
-
-        <section id="skills-tools">
-            <h2>Technical Skills and Tools</h2>
+        <button class="accordion">Current Work</button>
+        <div class="panel">
             <ul>
-                <li>Python, C++, R, SQL</li>
-                <li>Data Analysis with STATA, Excel, and MATLAB</li>
-                <li>Machine Learning and AI concepts</li>
-                <!-- Add more skills and tools -->
+                <li>Program Director at Reinstalling Hope</li>
+                <li>Nirukta LLC</li>
             </ul>
-        </section>
+        </div>
 
-        <section id="awards-recognition">
-            <h2>Awards and Recognitions</h2>
-            <p>Recipient of the Davis Peace Project grant for community development initiatives.</p>
-            <!-- Add more awards and recognitions -->
-        </section>
+        <button class="accordion">Education</button>
+        <div class="panel">
+            <ul>
+                <li>Kenyon College</li>
+                <li>Oxford University</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Professional Work Experience</button>
+        <div class="panel">
+            <ul>
+                <li>Morningstar</li>
+                <li>Ohio Innovation Fund</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Academic Papers</button>
+        <div class="panel">
+            <ul>
+                <li>Research Paper in Econometrics</li>
+                <li>Capstone Project in Math</li>
+                <li>Portfolio Modelling</li>
+            </ul>
+        </div>
     </main>
 
     <footer>
         <!-- Footer Content -->
     </footer>
 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 </body>
 </html>
