@@ -4,30 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Asmod Khakurel</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .accordion {
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            text-align: left;
-            border: none;
-            outline: none;
-            transition: 0.4s;
-            background-color: #f1f1f1;
-        }
-
-        .active, .accordion:hover {
-            background-color: #ccc;
-        }
-
-        .panel {
-            padding: 0 18px;
-            display: none;
-            background-color: white;
-            overflow: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Linking to the centralized CSS file -->
 </head>
 <body>
     <header>
@@ -48,59 +25,26 @@
             <p>Welcome to my portfolio page! Here, you'll find a selection of projects and experiences that best represent my skills and accomplishments.</p>
         </section>
 
-        <button class="accordion">Current Work</button>
-        <div class="panel">
-            <ul>
-                <li>Program Director at Reinstalling Hope</li>
-                <li>Nirukta LLC</li>
-            </ul>
-        </div>
-
+        <!-- Example of nested accordions for the "Education" section -->
         <button class="accordion">Education</button>
         <div class="panel">
-            <ul>
-                <li>Kenyon College</li>
-                <li>Oxford University</li>
-            </ul>
+            <button class="inner-accordion">Kenyon College</button>
+            <div class="inner-panel">
+                <p>Details about Kenyon College - [Insert your specific details here]</p>
+            </div>
+            <button class="inner-accordion">Oxford University</button>
+            <div class="inner-panel">
+                <p>Details about Oxford University - [Insert your specific details here]</p>
+            </div>
         </div>
 
-        <button class="accordion">Professional Work Experience</button>
-        <div class="panel">
-            <ul>
-                <li>Morningstar</li>
-                <li>Ohio Innovation Fund</li>
-            </ul>
-        </div>
-
-        <button class="accordion">Academic Papers</button>
-        <div class="panel">
-            <ul>
-                <li>Research Paper in Econometrics</li>
-                <li>Capstone Project in Math</li>
-                <li>Portfolio Modelling</li>
-            </ul>
-        </div>
+        <!-- Additional categories can follow the same structure -->
     </main>
 
     <footer>
-        <!-- Footer Content -->
+        <!-- Footer content -->
     </footer>
 
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-    </script>
+    <script src="accordion.js"></script> <!-- External JavaScript file for accordion functionality -->
 </body>
 </html>
