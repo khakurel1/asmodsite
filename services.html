@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Asmod Khakurel</title>
+    <title>Services & Contact | Asmod Khakurel</title>
     <link rel="stylesheet" href="style.css"> <!-- Ensure to link your CSS file -->
 </head>
 <body>
-
     <header>
         <nav>
             <ul>
@@ -15,8 +14,9 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <li><a href="services.html">Services</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -36,10 +36,32 @@
             <p>From dynamic, responsive websites to complex web applications, I offer complete web development services to bring your digital presence to life.</p>
         </section>
 
-        <!-- Add more services as needed -->
         <section class="service">
             <h2>Consulting</h2>
             <p>With expertise in economics and finance, I offer consulting services to help businesses and individuals navigate financial challenges and opportunities.</p>
+        </section>
+
+        <section id="contact-info">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me via email or connect with me on LinkedIn. I'm always open to discussing new opportunities, projects, or just having a chat!</p>
+            <p>Email: <a href="mailto:asmodkhakurel@gmail.com">asmodkhakurel@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/asmod-khakurel/" target="_blank">Asmod Khakurel</a></p>
+        </section>
+
+        <section id="contact-form">
+            <h2>Send Me a Message</h2>
+            <form action="YOUR_FORM_ENDPOINT" method="POST"> <!-- Replace YOUR_FORM_ENDPOINT with the actual endpoint -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
 
