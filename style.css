@@ -225,10 +225,6 @@ footer {
     transition: transform 0.2s;
 }
 
-.gallery-container img:hover {
-    transform: scale(1.05); /* Optional: slightly enlarges the images on hover */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for better visual effect */
-}
 
 /* Lightbox (overlay) styles */
 .lightbox {
