@@ -146,7 +146,6 @@ footer {
     transform: scale(1.05); /* Optional: slightly enlarges the images on hover */
 }
 
-
 /* Enhancements for larger screen layouts */
 @media (min-width: 768px) {
     .gallery-container {
@@ -184,4 +183,25 @@ footer {
 .gallery-container img:hover {
     transform: scale(1.1); /* Slightly increases the scale effect on hover */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for better visual effect */
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5px; /* Reduced gap. Set to 0px if no space is desired */
+    padding: 20px;
+}
+
+.gallery-container img {
+    width: 100%; /* Ensure images fill their columns */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin: 0; /* Remove any default margins */
+    display: block; /* Remove any extra space below the image */
+    transition: transform 0.2s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
