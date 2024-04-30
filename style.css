@@ -145,3 +145,43 @@ footer {
 .gallery-container img:hover {
     transform: scale(1.05); /* Optional: slightly enlarges the images on hover */
 }
+
+
+/* Enhancements for larger screen layouts */
+@media (min-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr); /* Adjusts to 3 columns on wider screens */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: inline-block; /* Changes from inline for better spacing and alignment */
+        margin: 0 20px; /* Increased margin for better spacing on larger screens */
+    }
+}
+
+/* Further adjustments for very large screens */
+@media (min-width: 1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(4, 1fr); /* Adjusts to 4 columns on very wide screens */
+    }
+}
+
+/* Adjust button and link styles for larger screens */
+@media (min-width: 768px) {
+    button, .btn, .cta-button {
+        padding: 10px 24px; /* Larger padding for a better visual balance */
+        font-size: 18px; /* Slightly larger text for readability */
+    }
+}
+
+/* Enhanced hover effects for desktop */
+.gallery-container img:hover {
+    transform: scale(1.1); /* Slightly increases the scale effect on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for better visual effect */
+}
