@@ -249,3 +249,9 @@ footer {
 .lightbox:active, .lightbox:click { /* Hides the lightbox when clicked */
     display: none;
 }
+
+@media (min-width: 768px) {
+    .gallery-container img {
+        /* Check for any properties here that might affect image quality */
+    }
+}
