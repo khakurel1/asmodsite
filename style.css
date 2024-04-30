@@ -255,3 +255,47 @@ footer {
         /* Check for any properties here that might affect image quality */
     }
 }
+
+
+.description-box {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 100;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.profile-pic {
+    flex-basis: 200px; /* Adjust based on desired size */
+    width: 100%;
+    max-width: 200px; /* Keeps image size consistent */
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
