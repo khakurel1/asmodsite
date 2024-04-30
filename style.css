@@ -205,3 +205,27 @@ footer {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 200px; /* Adjust height as needed */
+    gap: 5px; /* Reduced gap. Set to 0px if no space is desired */
+    padding: 20px;
+    align-items: stretch; /* Aligns items to stretch in container */
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 100%; /* Full height to match the grid area */
+    object-fit: cover; /* Ensures image covers the area, cropping as needed */
+    border-radius: 8px;
+    margin: 0;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); /* Optional: slightly enlarges the images on hover */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds shadow for better visual effect */
+}
