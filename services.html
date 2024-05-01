@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services & Contact | Asmod Khakurel</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure to link your CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Ensure your CSS file is correctly linked -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script> <!-- Replace YOUR_CLIENT_ID with your actual PayPal client ID -->
 </head>
 <body>
     <header>
@@ -38,6 +39,7 @@
         <section class="service">
             <h2>Consulting</h2>
             <p>With expertise in economics and finance, I offer consulting services to help businesses and individuals navigate financial challenges and opportunities.</p>
+            <div id="paypal-container-30-minute-consultation"></div> <!-- PayPal button will render here -->
         </section>
 
         <section id="contact-info">
@@ -66,10 +68,6 @@
                 }
             }).render("#paypal-container-30-minute-consultation");
         </script>
-        
-        
-        
-        
     </main>
 
     <footer>
