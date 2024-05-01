@@ -324,3 +324,38 @@ footer {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
+/* Default styles for larger screens */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.profile-pic {
+    flex-basis: 200px;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center; /* Center text on smaller screens */
+    }
+}
