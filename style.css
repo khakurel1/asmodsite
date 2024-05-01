@@ -250,11 +250,6 @@ footer {
     display: none;
 }
 
-@media (min-width: 768px) {
-    .gallery-container img {
-        /* Check for any properties here that might affect image quality */
-    }
-}
 
 
 .description-box {

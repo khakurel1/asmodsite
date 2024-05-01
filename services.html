@@ -47,17 +47,27 @@
             <p>LinkedIn: <a href="https://www.linkedin.com/in/asmod-khakurel/" target="_blank">Asmod Khakurel</a></p>
         </section>
 
-        <section id="contact-form">
-            <h2>Book a 30-minute Consultation</h2>
-            <!-- Replace the form with a PayPal button -->
-            <div id="paypal-container-30-minute-consultation"></div>
-            <script src="https://www.paypal.com/sdk/js?client-id=BAAnKZkyOR2fgIS9erPoPfvp0FN3wEvHQjnNjGYCjTbebXBFtaofJD45GJjYEJVpZueNI_tlkJXHC1GLF0&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
-            <script>
-                paypal.HostedButtons({
-                    hostedButtonId: "30-minute-consultation",
-                }).render("#paypal-container-30-minute-consultation");
-            </script>
-        </section>
+        <script>
+            paypal.Buttons({
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: '50.00' // Replace this value with the actual consultation fee
+                            }
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        alert('Transaction completed by ' + details.payer.name.given_name);
+                        // Redirect to a success page or perform any other action upon successful payment
+                    });
+                }
+            }).render("#paypal-container-30-minute-consultation");
+        </script>
+        
+        
         
         
     </main>
