@@ -1,88 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asmod Khakurel</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asmod Khakurel — Educator, Founder & Bridge-builder</title>
+  <meta name="description" content="Asmod Khakurel helps ambitious students reach world-class universities and connects institutions and businesses with Nepal. Oxford alumnus, Kenyon full-ride, incoming PhD at the University of Minnesota's Humphrey School.">
+  <link rel="icon" href="assets/img/Asmod%20Favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="services.html">Services</a></li> 
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Welcome to My World</h1>
-        <p>Exploring the intersections of technology, education, and entrepreneurship.</p>
-        <a href="about.html" class="cta-button">Learn More About Me</a>
 
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-container">
-                <img src="assets\img\20230506_094252(0).jpg" alt="Abbey Road">
-                <img src="assets\img\20230502_201914.jpg" alt="Christ Church College, Oxford">
-                <img src="assets/img/20230218_144115.jpg" alt="Trinity College, Cambridge">
-                <img src="assets\img\20230524_211255.jpg" alt="St. Catherine's College, Oxford">
-                <img src="assets\img\20230524_183852.jpg" alt="Bridge of Sighs, Oxford">
-                <img src="assets\img\20230525_185841.jpg" alt="New College, Oxford">
-                <img src="assets\img\20230511_204312.jpg" alt="Hertford College, Oxford">
-                <img src="assets\img\20230218_152142.jpg" alt="Bridge of Sighs, Cambridge">
-                <img src="assets\img\20230516_121825.jpg" alt="Embassy of Spain in the United Kingdom">
-                <img src="assets\img\20230524_182117_001.jpg" alt="Radcliffe Camera, Oxford">
-                <img src="assets\img\20230802_161555.jpg" alt="Morningstar, Inc., Chicago">
-                <img src="assets\img\Exov3Bhz_2x.jpg" alt="Embassy of Spain in the United Kingdom">
-                <img src="assets\img\IMG-20230516-WA0076.jpg" alt="Embassy of Saudi Arabia in the United Kingdom">
-                <img src="assets\img\20230510_193019.jpg" alt="Sam Daws, Oxford">
-                <img src="assets\img\IMG-20230516-WA0077.jpg" alt="Embassy of Saudi Arabia in the United Kingdom">
-                <img src="assets/img/Image_20240429220451.jpg" alt="Bridge of Sighs, Oxford">
-                <img src="assets\img\IMG-20240112-WA0000.jpg" alt="Permanent Mission of Nepal to the UN, New York">    
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand__mark">AK</span> Asmod Khakurel</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="press.html">Press &amp; Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="contact.html">Work with me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
 
-
-
-
-                <!-- Add more images as needed -->
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Asmod Khakurel. All rights reserved.</p>
-    </footer>
-   
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.gallery-container img');
-            const lightbox = document.getElementById('myLightbox');
-            const lightboxImage = document.getElementById('lightboxImage');
-    
-            images.forEach(image => {
-                image.addEventListener('click', function() {
-                    lightbox.style.display = 'flex'; // Show the lightbox
-                    lightboxImage.src = this.src; // Set the src for the lightbox image to the clicked image's src
-                });
-            });
-    
-            lightbox.addEventListener('click', function() {
-                lightbox.style.display = 'none'; // Hide the lightbox on click
-            });
-        });
-    </script>
-        
-        <div id="myLightbox" class="lightbox">
-            <img src="#" id="lightboxImage"> <!-- The src attribute will be dynamically set by JavaScript -->
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div>
+          <p class="hero__tag">Educator · Founder · Bridge-builder</p>
+          <h1>Building bridges between Nepal and the world.</h1>
+          <p class="hero__lead">From a roadless village in the Himalayas to Oxford and back, I help ambitious students reach world-class universities, and connect institutions and businesses with Nepal.</p>
+          <div class="hero__cta">
+            <a class="btn btn-whatsapp btn-lg" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Message me on WhatsApp
+            </a>
+            <a class="btn btn-outline btn-lg" href="services.html">Explore services</a>
+          </div>
+          <p class="hero__meta">Oxford alumnus · Kenyon College (full-ride) · Incoming PhD, Univ. of Minnesota Humphrey School</p>
         </div>
-        
-        </body>
-        </html>
-        
+        <div>
+          <!-- TODO: swap for a strong professional portrait when available -->
+          <img class="hero__portrait" src="assets/img/profile-pic.png" alt="Asmod Khakurel"
+               onerror="this.classList.add('hero__portrait-ph');this.removeAttribute('src');this.alt='AK';">
+        </div>
+      </div>
 
+      <div class="trust">
+        <span>Featured in <b>Oman Observer</b></span>
+        <span><b>eKantipur</b> (Kantipur Daily)</span>
+        <span><b>The Oxford Blue</b></span>
+        <span><b>The Diplomat Nepal</b></span>
+        <span><b>Kenyon Collegian</b></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTRO ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head center">
+        <p class="eyebrow">Who I am</p>
+        <h2>One person, many bridges.</h2>
+        <p class="lead">I grew up walking hours to school in Panchakanya, Nepal. Mentorship and opportunity took me to Kenyon College on a full scholarship, to Oxford, and into finance and venture capital. Today I build the bridges I once needed, for students, institutions, and businesses alike.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WAYS TO WORK ============ -->
+  <section class="section section--paper2 ways">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Ways to work with me</p>
+        <h2>How I can help</h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="card">
+          <div class="card__icon">🎓</div>
+          <p class="card__aud">Students &amp; families</p>
+          <h3>University Admissions</h3>
+          <p>Guidance to top US &amp; UK universities, from someone who did it from Nepal on a full-ride, Early Decision.</p>
+          <div class="card__foot"><a class="more" href="services.html#admissions">Learn more →</a></div>
+        </div>
+        <div class="card">
+          <div class="card__icon">🌏</div>
+          <p class="card__aud">Universities &amp; institutions</p>
+          <h3>Delegations &amp; Study Tours</h3>
+          <p>Turnkey diplomatic and educational delegations to Nepal, with real government and community access.</p>
+          <div class="card__foot"><a class="more" href="services.html#delegations">Learn more →</a></div>
+        </div>
+        <div class="card">
+          <div class="card__icon">🤝</div>
+          <p class="card__aud">Organizations &amp; investors</p>
+          <h3>Nepal Partnerships &amp; Advisory</h3>
+          <p>On-the-ground partnership facilitation, policy insight, and program design for those working with Nepal.</p>
+          <div class="card__foot"><a class="more" href="services.html#advisory">Learn more →</a></div>
+        </div>
+        <div class="card">
+          <div class="card__icon">🧭</div>
+          <p class="card__aud">Young changemakers</p>
+          <h3>Meridian Scholars &amp; Youth Programs</h3>
+          <p>Cross-border leadership programs and summer internships rooted in real community work in Nepal.</p>
+          <div class="card__foot"><a class="more" href="services.html#youth">Learn more →</a></div>
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top:32px;">
+        <a class="btn btn-outline-dark" href="services.html">See all services &amp; ventures</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SELECTED IMPACT ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Selected impact</p>
+        <h2>Work that speaks for itself</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Oxford delegations to Nepal</h3>
+          <p>Founded and led two Oxford Diplomatic Society delegations to Nepal (2025 &amp; 2026), connecting students and alumni with ministers, ambassadors, and the UN.</p>
+        </div>
+        <div class="card">
+          <h3>Meridian Scholars Program</h3>
+          <p>Launched a 10-week global youth leadership residency with the Oxford Diplomatic Society, IRD, and Peak Potential, with mentors from Oxford, Caltech &amp; the Ivy League.</p>
+        </div>
+        <div class="card">
+          <h3>Youth Voices at the PMO</h3>
+          <p>Coordinated a Youth Policy Dialogue at Nepal's Prime Minister's Office, putting young professionals face to face with senior leadership.</p>
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top:32px;">
+        <a class="btn btn-outline-dark" href="impact.html">Explore the full portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Let's build something across borders.</h2>
+        <p>Whether you're a student aiming for a top university, an institution planning a visit to Nepal, or an organization looking for a trusted partner on the ground, I'd love to hear from you.</p>
+        <div class="btn-row" style="justify-content:center;">
+          <a class="btn btn-whatsapp btn-lg" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect." target="_blank" rel="noopener">Message me on WhatsApp</a>
+          <a class="btn btn-outline btn-lg" href="contact.html">Other ways to reach me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Asmod Khakurel</div>
+          <p class="about-blurb">Educator, founder, and bridge-builder connecting Nepal with the world, through education, diplomacy, and technology.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="impact.html">Impact</a>
+          <a href="press.html">Press &amp; Writing</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <a href="https://wa.me/9779803609207" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.linkedin.com/in/asmodkhakurel/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:asmodkhakurel@gmail.com">Email</a>
+          <a href="https://8ktech.co.uk" target="_blank" rel="noopener">8K Tech</a>
+          <a href="https://ird.com.np" target="_blank" rel="noopener">Institute for Rural Development</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Asmod Khakurel. All rights reserved.</span>
+        <span>Kathmandu · Oxford · Minnesota</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>

@@ -1,44 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Asmod Khakurel</title>
-    <link rel="stylesheet" href="style.css"> <!-- Make sure to link to your CSS stylesheet -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Asmod Khakurel</title>
+  <meta name="description" content="From a roadless village in Panchakanya to Oxford and back: the journey of Asmod Khakurel, educator, founder, and bridge-builder between Nepal and the world.">
+  <link rel="icon" href="assets/img/Asmod%20Favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="services.html">Services</a></li> 
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand__mark">AK</span> Asmod Khakurel</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="press.html">Press &amp; Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="contact.html">Work with me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section id="about-me">
-            <h1>About Me</h1>
-            <div class="about-container">
-                <img src="assets/img/20230524_182804 (2).jpg" alt="Asmod Khakurel" class="profile-pic">
-                <div class="about-text">
-                    <p>Asmod Khakurel is a distinguished scholar with a profound commitment to community development and business solutions. He specializes in Mathematics, Economics, and Computer Science and graduated from Kenyon College. During the undergraduate journey, Asmod studied a year-long study abroad at Oxford University.
+  <!-- page hero -->
+  <section class="hero" style="padding:72px 0 76px;">
+    <div class="container">
+      <p class="hero__tag">About</p>
+      <h1>From a roadless village to Oxford, and back.</h1>
+      <p class="hero__lead">My work is a simple commitment: that geography should never decide who gets to learn, collaborate, or create change.</p>
+    </div>
+  </section>
 
-                        As a Davis Project for Peace winner, Asmod completed a community development project during his early college days. After that, Asmod led a US-based nonprofit called Reinstalling Hope. As a director, he launched an internship program for US and UK university students to teach in Nepal. His other initiation, a fellowship program, has helped a handful of young, motivated, and hardworking high school graduates to prestigious US universities.
-                        
-                        Currently, Asmod is working on running a business in Nepal, bridging the Himalayas' barriers to connect with China. Experienced from working at Morningstar, a financial service company, and Ohio Innovation Fund, Asmod has gathered a wealth of knowledge and motivation to start a business in Nepal.
-                        His professional experience spans notable roles, such as Analyst at Morningstar and Venture Capital Intern at Ohio Innovation Fund, where he utilized advanced financial modeling and data analysis to enhance business operations and investment strategies. 
-                        
-                        Asmod Khakurel is based in Gambier, Ohio, where he continues influencing his local and academic communities through his innovative approaches to education, technology, and finance. His work has been recognized with awards like the Davis Peace Project grant and featured on Morningstar’s website and the company’s LinkedIn.
-                        </p>     
-            </div>
-        </section>
-        
-    </main>
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <aside class="about-portrait">
+          <!-- TODO: swap for a preferred portrait when available -->
+          <img src="assets/img/profile-pic.png" alt="Asmod Khakurel"
+               onerror="this.outerHTML='&lt;div class=\'ph\'&gt;AK&lt;/div&gt;';">
+          <p class="cap">Asmod Khakurel</p>
+          <div class="btn-row" style="justify-content:center; margin-top:16px;">
+            <a class="btn btn-outline-dark" href="assets/pdfs/Asmod_Resume.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </aside>
 
+        <div>
+          <p>I grew up in a remote village in Panchakanya, Nepal, without road access. For years, walking for hours each day was the only way to reach school. The wider world felt distant, not for any lack of curiosity, but because the opportunities to engage with it simply did not exist.</p>
+
+          <p>What changed my life was a bridge someone else built for me. Through the Fulbright/USEF Nepal <strong>Opportunity Funds Program</strong>, I received the mentorship and support to apply abroad, and earned a <strong>full scholarship to Kenyon College through Early Decision</strong>. At Kenyon I studied Mathematics and Economics with a minor in Computer Science, spent a <strong>full junior year studying abroad at the University of Oxford</strong>, and completed a summer program at the <strong>Tuck School of Business at Dartmouth</strong>.</p>
+
+          <p>Along the way I gained the professional grounding that now informs my consulting: an analyst role at <strong>Morningstar</strong> and a venture-capital internship at the <strong>Ohio Innovation Fund</strong>, where I worked in financial modeling, data analysis, and investment strategy. I have also served as a <strong>Consultant to the Ministry of Foreign Affairs</strong>, contributing to Nepal's diplomatic and policy work.</p>
+
+          <p>Even as a student, I wanted to reopen the door I had walked through. As a <strong>Davis Projects for Peace</strong> winner, I returned to Nepal to set up a rural computer lab and skills-training program. I went on to lead a US-based nonprofit and launched internship and fellowship programs that have helped young Nepalis reach leading universities abroad, and brought international students to Nepal.</p>
+
+          <p>Today I channel that work through the <strong>Institute for Rural Development (IRD)</strong>, a tech-driven organization I lead that advances sustainable development in Nepal's rural communities; through <strong>8K Tech</strong>, a UK-registered company I co-founded that connects Nepal's engineering talent with clients worldwide; and through cross-border education initiatives like the <strong>Meridian Scholars Program</strong>. I've had the privilege of leading two Oxford Diplomatic Society delegations to Nepal and representing Nepal on delegations as far as Oman.</p>
+
+          <p>This year, I begin a <strong>PhD at the University of Minnesota's Humphrey School of Public Affairs</strong>, deepening the policy foundations of the work I care about most.</p>
+
+          <p>It has been a long path from walking hours to school to building global partnerships. All of it points in the same direction: making sure the next student in a roadless village has a bridge waiting for them, too.</p>
+
+          <h2 style="margin-top:48px;">A quick timeline</h2>
+          <ul class="timeline" style="margin-top:24px;">
+            <li>
+              <span class="yr">2021</span>
+              <h4>Davis Projects for Peace</h4>
+              <p>Won the grant and ran a rural computer lab and skills-training program in Nepal.</p>
+            </li>
+            <li>
+              <span class="yr">Kenyon College · full-ride</span>
+              <h4>BA, Mathematics &amp; Economics (minor, Computer Science)</h4>
+              <p>Admitted Early Decision through the Opportunity Funds Program.</p>
+            </li>
+            <li>
+              <span class="yr">Junior year</span>
+              <h4>Study abroad, University of Oxford</h4>
+              <p>A full year at Oxford; later summer study at Tuck School of Business, Dartmouth.</p>
+            </li>
+            <li>
+              <span class="yr">Experience</span>
+              <h4>Morningstar · Ohio Innovation Fund · Ministry of Foreign Affairs</h4>
+              <p>Financial analysis, venture capital, and consulting on diplomacy and policy.</p>
+            </li>
+            <li>
+              <span class="yr">2024</span>
+              <h4>Co-founded 8K Tech &amp; launched the internship series</h4>
+              <p>Founded a UK-registered tech company and grew the Teach &amp; Travel internship into an annual program.</p>
+            </li>
+            <li>
+              <span class="yr">2025–2026</span>
+              <h4>Leading IRD &amp; the Oxford–Nepal delegations</h4>
+              <p>Two Oxford Diplomatic Society delegations to Nepal, the Meridian Scholars launch, and the Youth Policy Dialogue Series.</p>
+            </li>
+            <li>
+              <span class="yr">2026</span>
+              <h4>Incoming PhD, Humphrey School of Public Affairs</h4>
+              <p>University of Minnesota.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Want to work together?</h2>
+        <p>I'd be glad to hear what you're working on, and to see whether I can help.</p>
+        <div class="btn-row" style="justify-content:center;">
+          <a class="btn btn-whatsapp btn-lg" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%20read%20your%20About%20page%20and%20would%20like%20to%20connect." target="_blank" rel="noopener">Message me on WhatsApp</a>
+          <a class="btn btn-outline btn-lg" href="services.html">See how I can help</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Asmod Khakurel</div>
+          <p class="about-blurb">Educator, founder, and bridge-builder connecting Nepal with the world, through education, diplomacy, and technology.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="impact.html">Impact</a>
+          <a href="press.html">Press &amp; Writing</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <a href="https://wa.me/9779803609207" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.linkedin.com/in/asmodkhakurel/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:asmodkhakurel@gmail.com">Email</a>
+          <a href="https://8ktech.co.uk" target="_blank" rel="noopener">8K Tech</a>
+          <a href="https://ird.com.np" target="_blank" rel="noopener">Institute for Rural Development</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Asmod Khakurel. All rights reserved.</span>
+        <span>Kathmandu · Oxford · Minnesota</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>

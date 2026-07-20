@@ -1,78 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services & Contact | Asmod Khakurel</title>
-    <link rel="stylesheet" href="style.css"> <!-- Ensure your CSS file is correctly linked -->
-    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script> <!-- Replace YOUR_CLIENT_ID with your actual PayPal client ID -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Asmod Khakurel</title>
+  <meta name="description" content="University admissions consulting, delegations and study tours to Nepal, partnership and policy advisory, youth programs, technology, and speaking, ways to work with Asmod Khakurel.">
+  <link rel="icon" href="assets/img/Asmod%20Favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="services.html">Services</a></li> 
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="services-intro">
-            <h1>My Services</h1>
-            <p>Welcome to my services page! Here you'll find a detailed list of the professional services I offer, ranging from data analysis to web development. Browse through to see how I can help you or your business succeed.</p>
-        </section>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand__mark">AK</span> Asmod Khakurel</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li><a href="press.html">Press &amp; Writing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a class="btn btn-primary" href="contact.html">Work with me</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
 
-        <section class="service">
-            <h2>Data Analysis</h2>
-            <p>I provide comprehensive data analysis services, including statistical analysis, predictive modeling, and data visualization to help you make informed decisions based on your data.</p>
-        </section>
+  <section class="hero" style="padding:72px 0 76px;">
+    <div class="container">
+      <p class="hero__tag">Services</p>
+      <h1>Ways to work with me</h1>
+      <p class="hero__lead">Whether you're a student, an institution, or an organization, here's how I can help, backed by work I've actually done. Every engagement is tailored, so pricing is by quote.</p>
+    </div>
+  </section>
 
-        <section class="service">
-            <h2>Web Development</h2>
-            <p>From dynamic, responsive websites to complex web applications, I offer complete web development services to bring your digital presence to life.</p>
-        </section>
+  <!-- 1. Admissions -->
+  <section class="section" id="admissions">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center;">
+        <div>
+          <p class="eyebrow">For students &amp; families</p>
+          <h2>University Admissions Consulting</h2>
+          <p class="lead">Get into top US and UK universities, guided by someone who did exactly that from Nepal, on a full-ride, Early Decision.</p>
+          <p>I've been on both sides of the process: as an Opportunity Funds applicant who reached Kenyon and Oxford, and as an EducationUSA session leader (pre-departure orientation, "Get Inspired," and more). I help students find the right-fit schools, build a compelling narrative, and navigate financial aid and scholarships, the piece that too often decides who gets to go.</p>
+          <p style="color:var(--muted);"><strong>Includes:</strong> school shortlisting &amp; strategy · full-ride and financial-aid positioning · Early Decision strategy · essays and application review · interview preparation · study-abroad transition support.</p>
+          <div class="btn-row" style="margin-top:22px;">
+            <a class="btn btn-whatsapp" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%27m%20interested%20in%20admissions%20consulting." target="_blank" rel="noopener">Ask about admissions</a>
+            <a class="btn btn-outline-dark" href="contact.html">Request a quote</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Who it's for</h3>
+          <p>Ambitious high-school and gap-year students (and their families), in Nepal and worldwide, aiming for competitive US/UK universities, especially those who need strong financial aid.</p>
+          <h3 style="margin-top:18px;">Why me</h3>
+          <p>A full-ride, Early Decision outcome from a roadless village, plus real EducationUSA advising experience. I know the path because I walked it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section class="service">
-            <h2>Consulting</h2>
-            <p>With expertise in economics and finance, I offer consulting services to help businesses and individuals navigate financial challenges and opportunities.</p>
-            <div id="paypal-container-30-minute-consultation"></div> <!-- PayPal button will render here -->
-        </section>
+  <!-- 2. Delegations -->
+  <section class="section section--paper2" id="delegations">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center;">
+        <div class="card">
+          <h3>Who it's for</h3>
+          <p>Universities, student societies, alumni networks, think tanks, and corporates that want a substantive, well-run visit to Nepal, not just tourism.</p>
+          <h3 style="margin-top:18px;">Track record</h3>
+          <p>Founded and led two Oxford Diplomatic Society delegations to Nepal (2025 &amp; 2026) with access to ministries, ambassadors, the UN, and rural communities.</p>
+        </div>
+        <div>
+          <p class="eyebrow">For universities &amp; institutions</p>
+          <h2>Delegations &amp; Study Tours to Nepal</h2>
+          <p class="lead">Turnkey diplomatic and educational delegations with genuine access, from the halls of government to the villages of the Himalayas.</p>
+          <p>I design and host end-to-end programs: high-level meetings (foreign ministry, parliamentarians, ambassadors, UN bodies, think tanks), university and cultural engagements, and authentic community visits, all with the logistics, safety, and local partnerships handled.</p>
+          <p style="color:var(--muted);"><strong>Includes:</strong> itinerary &amp; objectives design · government and institutional access · academic and community partnerships · full logistics, housing, and on-ground support · documentation and follow-up.</p>
+          <div class="btn-row" style="margin-top:22px;">
+            <a class="btn btn-whatsapp" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%27d%20like%20to%20discuss%20a%20delegation%20or%20study%20tour%20to%20Nepal." target="_blank" rel="noopener">Discuss a delegation</a>
+            <a class="btn btn-outline-dark" href="contact.html">Request a quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section id="contact-info">
-            <h1>Contact Me</h1>
-            <p>Feel free to reach out to me via email or connect with me on LinkedIn. I'm always open to discussing new opportunities, projects, or just having a chat!</p>
-            <p>Email: <a href="mailto:asmodkhakurel@gmail.com">asmodkhakurel@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/asmod-khakurel/" target="_blank">Asmod Khakurel</a></p>
-        </section>
+  <!-- 3. Advisory -->
+  <section class="section" id="advisory">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center;">
+        <div>
+          <p class="eyebrow">For organizations &amp; investors</p>
+          <h2>Nepal Partnerships &amp; Advisory</h2>
+          <p class="lead">A trusted partner on the ground to help you understand Nepal, build the right relationships, and design programs that work.</p>
+          <p>Through the Institute for Rural Development, I've convened dialogues with the Policy Research Institute, government ministries, and the Prime Minister's Office, and delivered community projects with international partners. I help foreign universities, NGOs, donors, and investors enter Nepal with credibility and local insight.</p>
+          <p style="color:var(--muted);"><strong>Includes:</strong> market-entry &amp; partnership facilitation · stakeholder mapping and introductions · policy research and briefings · program and project design · monitoring and on-ground execution.</p>
+          <div class="btn-row" style="margin-top:22px;">
+            <a class="btn btn-whatsapp" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%27d%20like%20to%20talk%20about%20partnerships%20or%20advisory%20in%20Nepal." target="_blank" rel="noopener">Start a conversation</a>
+            <a class="btn btn-outline-dark" href="contact.html">Request a quote</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Who it's for</h3>
+          <p>Foreign universities, NGOs, donors, investors, and organizations that want to work in or with Nepal and need a credible local bridge.</p>
+          <h3 style="margin-top:18px;">Why me</h3>
+          <p>Real access across government, academia, and community, and a documented record of delivering cross-border projects that hold up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <script>
-            paypal.Buttons({
-                createOrder: function(data, actions) {
-                    return actions.order.create({
-                        purchase_units: [{
-                            amount: {
-                                value: '50.00' // Replace this value with the actual consultation fee
-                            }
-                        }]
-                    });
-                },
-                onApprove: function(data, actions) {
-                    return actions.order.capture().then(function(details) {
-                        alert('Transaction completed by ' + details.payer.name.given_name);
-                        // Redirect to a success page or perform any other action upon successful payment
-                    });
-                }
-            }).render("#paypal-container-30-minute-consultation");
-        </script>
-    </main>
+  <!-- 4. Youth programs -->
+  <section class="section section--paper2" id="youth">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center;">
+        <div class="card">
+          <h3>Programs</h3>
+          <p><strong>Meridian Scholars Program</strong>, a 10-week global youth leadership residency co-hosted with the Oxford Diplomatic Society, IRD, and Peak Potential, with mentors from Oxford, Caltech, and the Ivy League.</p>
+          <p><strong>Summer internships in Nepal</strong>, the Teach &amp; Travel series that has brought students from Oxford, Kenyon, Dartmouth, Brown, UChicago, and more to teach and build in rural communities.</p>
+        </div>
+        <div>
+          <p class="eyebrow">For young changemakers &amp; schools</p>
+          <h2>Meridian Scholars &amp; Youth Programs</h2>
+          <p class="lead">Cross-border leadership, learning, and real community impact, rooted in Nepal.</p>
+          <p>These programs give high-school, gap-year, and undergraduate students the chance to design and deliver meaningful projects, work in international teams, and learn from world-class mentors, turning ideas into action alongside local communities.</p>
+          <div class="btn-row" style="margin-top:22px;">
+            <a class="btn btn-primary" href="https://www.meridianscholars.org/" target="_blank" rel="noopener">Visit Meridian Scholars</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%27m%20interested%20in%20your%20youth%20programs." target="_blank" rel="noopener">Ask about programs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <!-- Footer content here -->
-    </footer>
+  <!-- 5. 8K Tech -->
+  <section class="section" id="tech">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center;">
+        <div>
+          <p class="eyebrow">For businesses &amp; entrepreneurs</p>
+          <h2>8K Tech, Technology, Delivered</h2>
+          <p class="lead">A UK-registered, remote-first tech company I co-founded, connecting Nepal's deep engineering talent with clients around the world.</p>
+          <p>8K Tech builds quality software and tech services, delivered affordably, for clients across the US, UK, Germany, the UAE, and beyond. The name honors Nepal's eight peaks above 8,000 meters, including Everest. If you need tech built well, this is the team.</p>
+          <div class="btn-row" style="margin-top:22px;">
+            <a class="btn btn-primary" href="https://8ktech.co.uk" target="_blank" rel="noopener">Visit 8ktech.co.uk</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%27d%20like%20to%20talk%20about%20a%20tech%20project%20with%208K%20Tech." target="_blank" rel="noopener">Discuss a project</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>What they do</h3>
+          <p>Web and software development, delivered by a remote team of talented Nepali engineers, coordinated to international standards.</p>
+          <h3 style="margin-top:18px;">Clients so far</h3>
+          <p>US · UK · Germany · UAE, largely through word of mouth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- 6. Speaking -->
+  <section class="section section--paper2" id="speaking">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center;">
+        <div class="card">
+          <h3>Topics</h3>
+          <p>Cross-cultural leadership and diplomacy · getting into world-class universities from underserved backgrounds · building youth-led, cross-border initiatives · Nepal's development and potential.</p>
+        </div>
+        <div>
+          <p class="eyebrow">For events, schools &amp; organizations</p>
+          <h2>Speaking &amp; Workshops</h2>
+          <p class="lead">Talks and workshops drawn from a life spent building bridges across borders.</p>
+          <p>From EducationUSA sessions to diplomatic roundtables, I speak and run workshops for students, educators, and organizations, blending a personal story of opportunity with practical frameworks for cross-cultural work.</p>
+          <div class="btn-row" style="margin-top:22px;">
+            <a class="btn btn-whatsapp" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%27d%20like%20to%20invite%20you%20to%20speak%20or%20run%20a%20workshop." target="_blank" rel="noopener">Invite me to speak</a>
+            <a class="btn btn-outline-dark" href="contact.html">Request a quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band">
+        <h2>Not sure which fits? Just ask.</h2>
+        <p>Tell me what you're trying to do, and I'll point you to the right starting place, or tell you honestly if I'm not the right person.</p>
+        <div class="btn-row" style="justify-content:center;">
+          <a class="btn btn-whatsapp btn-lg" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%20have%20a%20question%20about%20your%20services." target="_blank" rel="noopener">Message me on WhatsApp</a>
+          <a class="btn btn-outline btn-lg" href="contact.html">Contact options</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Asmod Khakurel</div>
+          <p class="about-blurb">Educator, founder, and bridge-builder connecting Nepal with the world, through education, diplomacy, and technology.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="impact.html">Impact</a>
+          <a href="press.html">Press &amp; Writing</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <a href="https://wa.me/9779803609207" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.linkedin.com/in/asmodkhakurel/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:asmodkhakurel@gmail.com">Email</a>
+          <a href="https://8ktech.co.uk" target="_blank" rel="noopener">8K Tech</a>
+          <a href="https://ird.com.np" target="_blank" rel="noopener">Institute for Rural Development</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Asmod Khakurel. All rights reserved.</span>
+        <span>Kathmandu · Oxford · Minnesota</span>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/9779803609207?text=Hi%20Asmod%2C%20I%20found%20your%20website%20and%20would%20like%20to%20connect." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
