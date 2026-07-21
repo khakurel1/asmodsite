@@ -85,8 +85,8 @@ img { max-width: 100%; display: block; }
 .btn-outline:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
 .btn-outline-dark { border-color: var(--navy); color: var(--navy); }
 .btn-outline-dark:hover { background: var(--navy); color: #fff; }
-.btn-whatsapp { background: var(--whatsapp); color: #04331a; }
-.btn-whatsapp:hover { background: var(--whatsapp-d); color: #fff; transform: translateY(-1px); }
+.btn-whatsapp { background: var(--navy); color: #fff; }
+.btn-whatsapp:hover { background: var(--navy-900); color: #fff; transform: translateY(-1px); }
 .btn-lg { padding: 16px 32px; font-size: 1.05rem; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 14px; }
 
