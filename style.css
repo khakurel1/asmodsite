@@ -284,6 +284,7 @@ img { max-width: 100%; display: block; }
 .gallery figcaption { font-size:.8rem; color:var(--muted); margin-top:7px; line-height:1.4; }
 .gallery--sq { grid-template-columns:repeat(3,1fr); }
 .gallery--sq img { aspect-ratio:1/1; }
+.gallery--3 { grid-template-columns:repeat(3,1fr); }
 
 @media (max-width:960px){ .icards{ grid-template-columns:repeat(2,1fr);} .gallery{ grid-template-columns:repeat(3,1fr);} }
 @media (max-width:560px){ .gallery{ grid-template-columns:repeat(2,1fr);} }
