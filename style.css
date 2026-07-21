@@ -279,7 +279,7 @@ img { max-width: 100%; display: block; }
 /* ---------- Service media ---------- */
 .svc-media { width:100%; border-radius:10px; border:1px solid var(--line); box-shadow:var(--shadow); object-fit:cover; }
 .svc-media-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
-.svc-media-grid img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px; border:1px solid var(--line); }
+.svc-media-grid img { width:100%; aspect-ratio:1/1; object-fit:cover; border-radius:8px; border:1px solid var(--line); }
 .venture-logo { height:40px; width:auto; margin-bottom:16px; }
 
 /* ---------- Photo gallery ---------- */
@@ -288,6 +288,8 @@ img { max-width: 100%; display: block; }
 .gallery img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:8px; border:1px solid var(--line); box-shadow:var(--shadow); transition:transform .2s; }
 .gallery img:hover { transform:scale(1.02); }
 .gallery figcaption { font-size:.8rem; color:var(--muted); margin-top:7px; line-height:1.4; }
+.gallery--sq { grid-template-columns:repeat(3,1fr); }
+.gallery--sq img { aspect-ratio:1/1; }
 
 @media (max-width:960px){ .icards{ grid-template-columns:repeat(2,1fr);} .gallery{ grid-template-columns:repeat(3,1fr);} }
 @media (max-width:560px){ .gallery{ grid-template-columns:repeat(2,1fr);} }
